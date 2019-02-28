@@ -1,0 +1,191 @@
+
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.RegisterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.LogoutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SendTextServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.SendTextServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SendTextServlet</servlet-name>
+    <url-pattern>/people/textfirst</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SendCommentServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.SendCommentServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SendCommentServlet</servlet-name>
+    <url-pattern>/people/textsecond</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SendRecommentServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.SendRecommentServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SendRecommentServlet</servlet-name>
+    <url-pattern>/people/textthird</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddLikeServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.AddLikeTextServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddLikeServlet</servlet-name>
+    <url-pattern>/people/addliketext</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetTextServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.GetTextServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetTextServlet</servlet-name>
+    <url-pattern>/gettext</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LikePeopleServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.LikePeopleServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LikePeopleServlet</servlet-name>
+    <url-pattern>/people/likepeople</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>OwnInformationServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.OwnInformationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OwnInformationServlet</servlet-name>
+    <url-pattern>/people/owninformation</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+    <servlet-name>GetOwnTextServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.GetOwnTextServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetOwnTextServlet</servlet-name>
+    <url-pattern>/people/owntext</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.UpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/people/updateuser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdatePhotoServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.UpdatePhotoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdatePhotoServlet</servlet-name>
+    <url-pattern>/people/updatephoto</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserPhotoServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.UserPhotoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserPhotoServlet</servlet-name>
+    <url-pattern>/photo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetLikeuserTextServlet</servlet-name>
+    <servlet-class>weibo.webcontrol.GetLikeuserTextServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetLikeuserTextServlet</servlet-name>
+    <url-pattern>/people/main</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>LikeFirstText</servlet-name>
+     <servlet-class>weibo.webcontrol.AddLikeFirstTextServlet</servlet-class>
+   </servlet>
+  <servlet-mapping>
+    <servlet-name>LikeFirstText</servlet-name>
+    <url-pattern>/people/addlikefirst</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LikeSecondText</servlet-name>
+    <servlet-class>weibo.webcontrol.AddlikeSecondTextServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LikeSecondText</servlet-name>
+    <url-pattern>/people/addlikesecond</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LikeThirdText</servlet-name>
+    <servlet-class>weibo.webcontrol.AddLikeThirdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LikeThirdText</servlet-name>
+    <url-pattern>/people/addlikethird</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>weibo.utils.loginFilterutil</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/people/*</url-pattern>
+  </filter-mapping>
+</web-app>
