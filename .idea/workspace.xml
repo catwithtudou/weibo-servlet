@@ -7,9 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b2fc751-1200-45e9-a455-8429c2761e18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/weibo/webcontrol/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/weibo/webcontrol/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/css/detail.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/css/weibo-mainpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/css/weibo-mainpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/css/weibo-person.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/css/weibo-person.css" afterDir="false" />
@@ -100,7 +99,7 @@
           <entry key="" value="1" />
           <entry key="dummy" value="62" />
           <entry key="html" value="228" />
-          <entry key="java" value="37093" />
+          <entry key="java" value="37094" />
           <entry key="json" value="3" />
           <entry key="jsp" value="740" />
           <entry key="txt" value="9" />
@@ -110,7 +109,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="228" />
-          <entry key="JAVA" value="37093" />
+          <entry key="JAVA" value="37094" />
           <entry key="JSON" value="4" />
           <entry key="JSP" value="740" />
           <entry key="PLAIN_TEXT" value="71" />
@@ -206,7 +205,7 @@
         <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="52" column="82" selection-start-line="52" selection-start-column="82" selection-end-line="52" selection-end-column="82" />
+              <caret line="52" column="78" selection-start-line="52" selection-start-column="78" selection-end-line="52" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -442,7 +441,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551456707804" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551457202274" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -659,7 +658,7 @@
       <workItem from="1551332559665" duration="1304000" />
       <workItem from="1551413110127" duration="1556000" />
       <workItem from="1551414703333" duration="606000" />
-      <workItem from="1551442716535" duration="13296000" />
+      <workItem from="1551442716535" duration="13743000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;使用编译器提交&quot;">
       <created>1551446557563</created>
@@ -672,7 +671,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161698000" />
+    <option name="totallyTimeSpent" value="162145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="390" y="32" width="1167" height="1058" extended-state="0" />
@@ -1102,7 +1101,7 @@
     <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="52" column="82" selection-start-line="52" selection-start-column="82" selection-end-line="52" selection-end-column="82" />
+          <caret line="52" column="78" selection-start-line="52" selection-start-column="78" selection-end-line="52" selection-end-column="78" />
         </state>
       </provider>
     </entry>
