@@ -2,6 +2,7 @@ package weibo.utils;
 
 import sun.misc.BASE64Encoder;
 
+import javax.servlet.http.HttpServletRequest;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Random;
@@ -44,6 +45,30 @@ public class TokenProccessorutil {
         }catch (NoSuchAlgorithmException e){
             throw new RuntimeException(e);
         }
+    }
+
+    /**
+     　　* @Description:判断客服端提交上来的令牌和服务器端生成的令牌是否一致
+     　　* @param :request
+     　　* @return :true 用户重复提交了
+     　　*/
+    public boolean isRepeatSubmit(HttpServletRequest request){
+        String client_token=request.getParameter("token");
+        //1.如果用户提交的表单数据没有token,则是重复提交了表单
+        if(client_token==null){
+            return true;
+        }
+        //取出存储在Session中的token
+        String server_token=(String) request.getSession().getAttribute("token");
+        //2.如果当前用户的session不存在token(令牌),则是用户重复提交了表单
+        if(server_token==null){
+            return true;
+        }
+        //3.存储在Session中的token(令牌)与表单提交Token不同,则用户重复提交了表单
+        if(!client_token.equals(server_token)){
+            return true;
+        }
+        return false;
     }
 
 }

@@ -435,4 +435,10 @@
 
 - **AddLikeThirdTextServlet:点赞评论的评论页面(需要过滤) /people/addlikethird**
 
-- **GetTokenServlet:得到Token令牌的页面(需要过滤) /people/form**
+- **GetTokenServlet:得到Token令牌(防止用户重复提交数据)的页面(需要过滤) /people/form**
+
+- **CheckCodeServlet:得到验证码图片及session的页面(不需要过滤) /checkCode**
+
+  
+
+  

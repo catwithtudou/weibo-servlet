@@ -28,15 +28,17 @@ public class LogoutServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html;charset=utf-8");
         //关闭session对象
-        HttpSession session=req.getSession(false);
-        String username=(String)session.getAttribute("userid");
+        HttpSession session=req.getSession();
+        String username=(String)session.getAttribute("username");
         session.invalidate();
         //注销成功
         System.out.println("注销成功"+username);
         resp.getWriter().print("<script>alert('"+" 用户:"+username+" 注销成功');</script>");
+
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req, resp);
     }
 }
