@@ -39,7 +39,7 @@ public class GetUserServiceImpl implements GetUserService {
         Userfirst userfirst=new Userfirst();
         userfirst= UserIDaoImpl.getInstance().getUserInformation(userid);
         StringBuffer sb=new StringBuffer();
-        sb.append("{\"status\":10000,\"data\":[");
+        sb.append("{\"code\":200,\"message\":\"success\",\"data\":[");
         sb.append("{\"userid\":\"").append(userfirst.getUserid())
                 .append("\",\"username\":\"").append(userfirst.getUsername())
                 .append("\",\"photo\":\"").append(userfirst.getPhoto())
