@@ -50,7 +50,7 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("username",userfirst1.getUsername());
            session.setAttribute("photo",userfirst1.getPhoto());
            resp.sendRedirect("/html/weibo-mainpage.html");
-            resp.getWriter().print("<script>alert('用户登陆成功');window.location='/html/weibo-mainpage.html'</script>");
+            resp.getWriter().print("<script>alert('用户登陆成功');window.location='weibo/html/weibo-mainpage.html'</script>");
         }else{
             resp.getWriter().print("<script>alert('用户名或密码错误');history.back();</script>");
            // resp.sendRedirect("/login");

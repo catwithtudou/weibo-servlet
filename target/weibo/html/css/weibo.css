@@ -1,0 +1,650 @@
+.title1{
+    background-color: #EA662D;
+    height: 1.5px;
+    width: 1450px;
+}
+.title2{
+    background-color: white;
+    height: 50px;
+    width: 1000px;
+}
+.img1{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 10px;
+    left: 100px;    
+}
+.i1{
+    font-size: 20px;
+    position: absolute;
+    top: 13px;
+    left: 140px;    
+}
+.input1{
+    background-color: #EFEFF2;
+    height: 20px;
+    width:  400px;
+    position: absolute;
+    top: 12px;
+    left: 220px;    
+}
+.search{
+    position: absolute;
+    left: 600px;
+    top: 16px;
+    
+
+}
+.zhuye{
+    position: absolute;
+    left: 940px;
+    top: 16px;
+    width: 18px;
+}
+.p1{
+    position: absolute;
+    left: 965px;
+    top: 0px;
+
+}
+.shipin{
+    position: absolute;
+    left: 1020px;
+    top: 16px;
+    width:18px;
+}
+.p2{
+    position: absolute;
+    left: 1045px;
+    top: -1px;
+
+}
+.find{
+    position: absolute;
+    left: 1095px;
+    top: 16px;
+    width:18px;
+}
+.p3{
+    position: absolute;
+    left: 1120px;
+    top: -2px;
+}
+.youxi{
+    position: absolute;
+    left: 1170px;
+    top: 16px;
+    width:18px;
+}
+.p4{
+    position: absolute;
+    left: 1195px;
+    top: -2px;
+
+}
+.p5{
+    font-size: 5px;
+    position: absolute;
+    left: 1280px;
+    top: 4px;
+}
+.p6{
+    font-size: 5px;
+    position: absolute;
+    left: 1320px;
+    top: 4px;
+}
+.p7{
+    font-size: 5px;
+    position: absolute;
+    left: 1340px;
+    top: 4px;
+}
+.bodyleft{
+    background-color: white;
+    height: 500px;
+    width:  250px;
+    position: absolute;
+    top: 60px;
+    left: 10px;    
+
+}
+.div1{
+    background-color: #E73829;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: white;
+    border-radius:5px;
+    margin:0 auto;
+}
+.div2{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+.div3{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 55px;
+    left: 0px;
+}
+.div4{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 105px;
+    left: 100px;
+}
+.div5{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 110px;
+    left: 0px;
+}
+.div6{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 160px;
+    left: 100px;
+}
+.div7{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 165px;
+    left: 0px;
+}
+.div8{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 215px;
+    left: 100px;
+}
+.div9{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 220px;
+    left: 0px;
+}
+.div10{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 270px;
+    left: 100px;
+}
+.div11{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 275px;
+    left: 0px;
+}
+.div12{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    float: right;
+    text-align: center; 
+    line-height:45px;
+    color: black;
+    border-radius:5px;
+    margin:0 auto;
+    position: relative;
+    top: 325px;
+    left: 100px;
+}
+#lunbotu{
+    height: 300px;
+    width: 650px;
+    position: absolute;
+    left: 300px;
+    top:58px;
+    transform: translate(0,0); 
+    animation: lunbo 10s linear infinite;
+}
+.bodycenter_n{
+    height: 500px;
+    width: 650px;
+    position: absolute;
+    left: 300px;
+    top:400px;
+}
+.left_top{
+    width: 600px;
+    height: 235px;
+    background-color: yellow;
+}
+.l_t_t{
+    width: 600px;
+    height: 196px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.l_l_tl{
+    width: 80px;
+    height: 80px;
+    border-radius:100%;
+    overflow:hidden; 
+}
+.tx7{
+    width: 80px;
+    height: 84px;
+}
+.l_l_tr{
+    width: 500px;
+    height: 150px;
+}
+.l_l_tr_t{
+    width: 500px;
+    height: 50px;
+    font-size: 25px;
+}
+.l_l_tr_c{
+    width: 500px;
+    height: 50px;
+    color: #A4A4A4;
+}
+.l_l_tr_b{
+    width: 500px;
+    height: 50px;
+}
+.l_t_b{
+    width: 600px;
+    height: 39px;
+    display: flex;
+    flex-direction: row;
+}
+.l_t_b1{
+    width: 150.25px;
+    height: 38px;
+    background-color: #FFFFFF;
+    border-right:1px solid #D0D0D0;
+    display: flex;
+    align-items: center;
+}
+.l_t_b1_n{
+    width: 150.25px;
+    height: 22px;
+    font-size: 8px;
+    color: #646871;
+    text-align: center;
+}
+.l_t_b2{
+    width: 150.25px;
+    height: 38px;
+    background-color: #FFFFFF;
+    border-right:1px solid #D0D0D0;
+    display: flex;
+    align-items: center;
+}
+.l_t_b2_n{
+    width: 150.25px;
+    height: 22px;
+    font-size: 8px;
+    color: #646871;
+    text-align: center;
+}
+.l_t_b3{
+    width: 150.25px;
+    height: 38px;
+    background-color: #FFFFFF;
+    border-right:1px solid #D0D0D0;
+    display: flex;
+    align-items: center;
+}
+.l_t_b3_n{
+    width: 150.25px;
+    height: 22px;
+    font-size: 8px;
+    color: #646871;
+    text-align: center;
+    border:#FFFFFF
+}
+.l_t_b4{
+    width: 147px;
+    height: 38px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.l_t_b4_n{
+    width: 140px;
+    height: 22px;
+    font-size: 8px;
+    color: #646871;
+    text-align: center;
+    border:#FFFFFF; 
+}
+.bodyright_top{
+    height: 346px;
+    width: 340px;
+    background-color: #EFEFF2;
+    position: absolute;
+    left: 1000px;
+    top: 60px;
+    display: flex;
+    justify-content:center; 
+    align-items:center;
+}
+.right_c1{
+    height: 300px;
+    width: 286px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content:center; 
+    align-items:center;
+}
+.right_c2{
+    height: 279px;
+    width: 270px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+}
+.r_c2_head{
+    height: 44px;
+    width: 270px;
+    background-color: #EB672D;
+    display: flex;
+    flex-direction: row;
+}
+.r_c2_head_r{
+    height: 40px;
+    width: 135px;
+    background-color: #FFFFFF;
+    line-height: 40px;
+    text-align: center;
+}
+.r_c2_head_l{
+    height: 44px;
+    width: 135px;
+    background-color: #FFFFFF;
+    color:#6F6F6F;
+    line-height: 40px;
+    text-align: center;
+}
+.right_c2_center{
+    height: 191px;
+    width: 270px;
+    background-color: #FFFFFF;
+}
+.right_c2_bottom{
+    height: 16px;
+    width: 270px;
+    background-color:#FFFFFF;
+}
+.name{
+    height: 60px;
+    width: 270px;
+    background-color:#FFFFFF;
+    border:#C1C1C1; 
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+} 
+.geren{
+    height: 20px;
+    width: 20px;
+}
+.username{
+    height: 28px;
+    width: 230px;
+}
+.pass{
+    height: 35px;
+    width: 270px;
+    background-color:#FFFFFF;
+    border:#C1C1C1; 
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+} 
+.mima{
+    height: 20px;
+    width: 20px;
+}
+.password{
+    height: 28px;
+    width: 230px;
+}
+.right_c2_center3{
+    height: 15px;
+    width: 270px;
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+.c3_r{
+    height: 20px;
+    width: 60px;
+}
+.c3_rl{
+    font-size: 8px;
+    color: #BBBBBB;
+}
+.c3_l{
+    height: 15px;
+    width: 48px;
+    background-color:#FFFFFF;
+    font-size: 5px;
+    color: #BBBBBB;
+}
+.deng{
+    height: 60px;
+    width: 270px;
+    display: flex;
+    align-items:flex-end;
+}
+.right_c2_center4{
+    height: 34px;
+    width: 270px;
+    background-color:#EB6B2F;
+}
+.right_c2_bottom{
+    height: 40px;
+    width: 270px;
+    background-color:#FFFFFF;
+    display: flex;
+    align-items:baseline;
+}
+.p8{
+    height: 14px;
+    width: 72px;
+    font-size: 8px;
+}
+.p9{
+    font-size: 5px;
+    color: #EB8F75;
+}
+.right_c1_bottom{
+    height: 50px;
+    width: 272px;
+    background-color:#FFFFFF;
+    display: flex;
+    align-items: flex-end;
+}
+.p10{
+    font-size: 5px;
+    color:#BBBBBB;
+}
+
+    .div2:hover{
+        cursor:hand;
+        background: #E73829;
+        color: white;
+        }
+        .div3:hover{
+            cursor:hand;
+            background: #E73829;
+            color: white;
+            }
+            .div4:hover{
+                cursor:hand;
+                background: #E73829;
+                color: white;
+                }
+                .div5:hover{
+                    cursor:hand;
+                    background: #E73829;
+                    color: white;
+                    }
+                    .div6:hover{
+                        cursor:hand;
+                        background: #E73829;
+                        color: white;
+                        }
+                        .div7:hover{
+                            cursor:hand;
+                            background: #E73829;
+                            color: white;
+                            }
+                            .div8:hover{
+                                cursor:hand;
+                                background: #E73829;
+                                color: white;
+                                }
+                                .div9:hover{
+                                    cursor:hand;
+                                    background: #E73829;
+                                    color: white;
+                                    }
+                                    .div10:hover{
+                                        cursor:hand;
+                                        background: #E73829;
+                                        color: white;
+                                        }
+                                        .div11:hover{
+                                            cursor:hand;
+                                            background: #E73829;
+                                            color: white;
+                                            }
+                                            .div12:hover{
+                                                cursor:hand;
+                                                background: #E73829;
+                                                color: white;
+                                                }
+                                                .p1:hover{
+                                                    cursor:hand;
+                                                    color: #EB672D;
+                                                    }
+                                                    .p2:hover{
+                                                        cursor:hand;
+                                                        color: #EB672D;
+                                                        }
+                                                        .p3:hover{
+                                                            cursor:hand;
+                                                            color: #EB672D;
+                                                            }
+                                                            .p4:hover{
+                                                                cursor:hand;
+                                                                color: #EB672D;
+                                                                }
+                                                                .p5:hover{
+                                                                    cursor:hand;
+                                                                    color: #EB672D;
+                                                                    }
+                                                                    .p6:hover{
+                                                                        cursor:hand;
+                                                                        color: #EB672D;
+                                                                        }
+                                                                        .p7:hover{
+                                                                            cursor:hand;
+                                                                            color: #EB672D;
+                                                                            }
+                                                                            .p8:hover{
+                                                                                cursor:hand;
+                                                                                color: black;
+                                                                                }
+
+                                                                            
+                                                
+                                                        
+
+
+

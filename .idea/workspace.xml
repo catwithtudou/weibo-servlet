@@ -7,7 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b2fc751-1200-45e9-a455-8429c2761e18" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/weibo/webcontrol/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/weibo/webcontrol/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/css/detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/css/weibo-mainpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/css/weibo-mainpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/css/weibo-person.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/css/weibo-person.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/css/weibo-personal-in.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/css/weibo-personal-in.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/css/weibo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/css/weibo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/img/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/img/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/img/long-line.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/img/long-line.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/img/tx.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/img/tx.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/weibo-mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/weibo-mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/weibo-person.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/weibo-person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/weibo-personal-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/weibo-personal-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/weibo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/weibo.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,7 +100,7 @@
           <entry key="" value="1" />
           <entry key="dummy" value="62" />
           <entry key="html" value="228" />
-          <entry key="java" value="37087" />
+          <entry key="java" value="37093" />
           <entry key="json" value="3" />
           <entry key="jsp" value="740" />
           <entry key="txt" value="9" />
@@ -95,7 +110,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="228" />
-          <entry key="JAVA" value="37087" />
+          <entry key="JAVA" value="37093" />
           <entry key="JSON" value="4" />
           <entry key="JSP" value="740" />
           <entry key="PLAIN_TEXT" value="71" />
@@ -109,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/SendCommentServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="48" column="73" lean-forward="true" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
+            <state relative-caret-position="343">
+              <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -127,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/SendTextServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="68" column="4" lean-forward="true" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+            <state relative-caret-position="270">
+              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -149,7 +164,7 @@
         <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/UpdateUserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+              <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -158,7 +173,7 @@
         <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/UserPhotoServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,7 +185,7 @@
         <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/CheckCodeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="302">
-              <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+              <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,8 +205,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="52" column="93" selection-start-line="52" selection-start-column="93" selection-end-line="52" selection-end-column="93" />
+            <state relative-caret-position="375">
+              <caret line="52" column="82" selection-start-line="52" selection-start-column="82" selection-end-line="52" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -427,7 +442,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551456199082" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551456707804" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -644,7 +659,7 @@
       <workItem from="1551332559665" duration="1304000" />
       <workItem from="1551413110127" duration="1556000" />
       <workItem from="1551414703333" duration="606000" />
-      <workItem from="1551442716535" duration="12789000" />
+      <workItem from="1551442716535" duration="13296000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;使用编译器提交&quot;">
       <created>1551446557563</created>
@@ -657,11 +672,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161191000" />
+    <option name="totallyTimeSpent" value="161698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="390" y="32" width="1167" height="1058" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22673893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -673,7 +687,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32719395" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954832" visible="true" weight="0.2892741" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49954832" visible="true" weight="0.2892741" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -691,7 +705,7 @@
       <window_info anchor="right" id="PlantUML" order="3" weight="0.32886904" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32791328" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.32791328" />
       <window_info anchor="right" id="Database" order="7" weight="0.32886904" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -1013,7 +1027,7 @@
     <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/CheckCodeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
-          <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1030,7 +1044,7 @@
     <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/UserPhotoServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1040,7 +1054,7 @@
     <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/UpdateUserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1068,27 +1082,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/SendCommentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="48" column="73" lean-forward="true" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1551452564176.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/SendCommentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/SendTextServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="68" column="4" lean-forward="true" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+        <state relative-caret-position="270">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/weibo/webcontrol/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="52" column="93" selection-start-line="52" selection-start-column="93" selection-end-line="52" selection-end-column="93" />
+        <state relative-caret-position="375">
+          <caret line="52" column="82" selection-start-line="52" selection-start-column="82" selection-end-line="52" selection-end-column="82" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" type="text/css" href="css/weibo-mainpage.css">
+</head>
+ <body style="margin:0;padding:0;" onload="init()">
+    <div class="body1">
+        <div class="top">
+            <div class="title1"></div>
+            <div class="title2">
+                <div class="title2a">
+                    <img class="img1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548775670746&di=aed38cb3c1e82644cf2a16aac88bfcec&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F017794593fc139a8012193a3c54752.png%401280w_1l_2o_100sh.png">
+                    <i class="i1">微博</i>
+                    <input class="input1" type="text">
+                    <img class="search" src="img/search.png">
+                    <img class="zhuye" src="img/zhuye.png">
+                    <p class="p1">首页</p>
+                    <img class="shipin" src="img/shipin.png">
+                    <p class="p2">视频</p>
+                    <img class="find" src="img/find.png">
+                    <p class="p3">发现</p>
+                    <img class="youxi" src="img/youxi.png">
+                    <p class="p4">游戏</p>
+                    <img class="person" src="img/person.png">
+                    <p class="p5">redrock</p>
+                    <p class="p6">|</p>
+                    <img class="message" src="img/message.png">
+                    <img class="set" src="img/set.png">
+                    <img class="edit" src="img/edit.png">
+                </div>
+            </div>
+        </div>
+        <div class="top2"></div>
+        <div class="main">
+            <div class="left">
+                <div class="left_1"></div>
+                <div class="left_1"></div>
+                <div class="left_1">首页</div>
+                <div class="left_1">我的收藏</div>
+                <div class="left_1">我的赞</div>
+                <div class="left_2">
+                    <div class="left_2n"></div>
+                </div>
+                <div class="left_3">热门微博</div>
+                <div class="left_3">热门视频</div>
+                <div class="left_4">
+                    <div class="left_4n"></div>
+                </div>
+                <div class="left_5">好友圈</div>
+                <div class="left_5">特别关注</div>
+                <div class="left_5">V+微博</div>
+                <div class="left_5">▪️媒体</div>
+                <div class="left_5">▪️舞蹈</div>
+                <div class="left_5">▪️学习</div>
+                <div class="left_5">▪️明星</div>
+            </div>
+            <div class="right">
+                <div class="center">
+                    <form action="http://47.102.101.185:8080/weibo/people/textfirst" method="post">
+                        <div class="center_t">
+                            <div class="t_top_t">有什么新鲜事要告诉大家？</div>
+                            <input class="t_top_c" name="information">
+                            <div class="t_top_b">
+                                <div class="t_top_b_r">
+                                    <select class="secret" node-type="secret">
+                                        <option value="公开，完整显示">公开</option>
+                                        <option value="只显示星座">仅好友可见</option>
+                                        <option value="只显示月日">仅自己可见</option>
+                                        <option value="保密">群可见</option>
+                                    </select>
+                                    <button type="submit" class="t_t_brr">发布</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="center_b">
+                            <script>
+                                    function loadXMLDocAdd()
+                                    {    
+                                        
+                                        var xmlhttp;
+                                        if (window.XMLHttpRequest)
+                                        {
+                                            
+                                            xmlhttp=new XMLHttpRequest();
+                                        }
+                                        else
+                                        {
+                                            
+                                            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                                        }
+                                        xmlhttp.onreadystatechange=function()
+                                        {
+                                            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                                            { 
+                                                var Imagine=document.createElement("img");   
+                                                    Imagine.setAttribute("src",json.data[0].photo);
+                                                       Imagine.setAttribute("width","60px");
+                                                       Imagine.setAttribute("height","64px");
+                                                       father2.appendChild(Imagine);
+    
+                                                    var json=JSON.parse(xmlhttp.responseText);
+                                                     var father1=document.getElementById("myDiv1");
+                                                    var father2=document.getElementById("myDiv2")
+                                                        
+                                                     var p2=document.createElement("p");
+                                                    p2.innerHTML="昵称："+json.data[0].username;
+                                                    father1.appendChild(p2);
+                                    
+                                                     var p4=document.createElement("p");
+                                                    p4.innerHTML="时间 ："+json.data[0].time;
+                                                    father2.appendChild(p4);
+    
+                                                    var p3=document.createElement("p");
+                                                    p3.innerHTML="信息："+json.data[0].information;
+                                                    father2.appendChild(p3);
+                                    
+                                                     var p5=document.createElement("p");
+                                                    p5.innerHTML="关注人数 ："+json.data[0].likes;
+                                                    father2.appendChild(p5);
+                                    
+                                                     var p6=document.createElement("p");
+                                                    p6.innerHTML="评论 :"+json.data[0].comments;
+                                                    father2.appendChild(p6);
+                                                
+                                            }
+                                        }
+                                        xmlhttp.open("GET","http://47.102.101.185:8080/weibo/people/main",true);
+                                        xmlhttp.send();
+                                        }
+                                    </script> 
+                             <button type="button" onclick="loadXMLDocAdd()">请求</button>
+                             <div id="myDiv1"></div>
+                             <div id="myDiv2"></div>
+                             <div class="left_top">
+                                    <div class="l_t_t">
+                                        <div class="l_l_tl">
+                                            <img class="tx7" src="img/tx2.jpg">
+                                        </div>
+                                        <div class="l_l_tr">
+                                            <div class="l_l_tr_t">
+                                                <strong>tudou</strong>
+                                            </div>
+                                            <div class="l_l_tr_c">时间：2019-01-31 11:57:07</div>
+                                            <div class="l_l_tr_b">微博：nihao</div>
+                                        </div>
+                                    </div>
+                                    <div class="l_t_b">
+                                        <div class="l_t_b1">
+                                            <div class="l_t_b1_n">
+                                                <img src="img/sc.png">
+                                                收藏
+                                            </div>
+                                        </div>
+                                        <div class="l_t_b2">
+                                            <div class="l_t_b2">
+                                                <div class="l_t_b2_n">
+                                                    <img src="img/zf.png">
+                                                    转发
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="l_t_b3">
+                                            <div class="l_t_b3">
+                                                <form action="http://47.102.101.185:8080/weibo/people/textsecond?id=999" method="post" enctype="multipart/form-data">
+                                                <button class="l_t_b3_n">
+                                                    <img src="img/pl.png">
+                                                    评论
+                                                    </form>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="l_t_b4">
+                                            <div class="l_t_b4">
+                                                <form action="http://47.102.101.185:8080/weibo/people/addlikefirst?id=999" method="post" enctype="multipart/form-data">
+                                                    <button class="l_t_b4_n">
+                                                        <img src="img/dz.png">
+                                                        点赞
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                   
+               
+                <div class="r_right">
+                    <div class="r_top">
+                        <img src="img/bj.png">
+                        <div class="r_top_t">
+                            <p class="p11"><strong>吴彦祖</strong></p>
+                        </div>
+                        <div class="r_top_b">
+                            <div class="r_t_b_t">
+                                <div class="r_t_tr"><strong> 203 </strong></div>
+                                <div class="r_t_tc"><strong> 100 </strong></div>
+                                <div class="r_t_tl"><strong> 99 </strong></div>
+                            </div>
+                            <div class="r_t_b_b">
+                                <div class="r_t_br">关注</div>
+                                <div class="r_t_bc">粉丝</div>
+                                <div class="r_t_bl">微博</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+       
+
+
+    </div>
+    <div class="bottom">
+        <div class="bot_t">
+            <div class="bot_t1">
+                <div class="t1_1">微博精彩</div>
+                <div class="t1_2">热门微博</div>
+                <div class="t1_2">名人堂</div>
+                <div class="t1_2">微相册</div>
+                <div class="t1_2">微指数</div>
+            </div>
+            <div class="bot_t2">
+                <div class="t2_1">手机玩微博</div>
+                <div class="t2_2">
+                    <div class="t2_2l">
+                        <img src="https://img.t.sinajs.cn/t6/style/images/common/footer_code.jpg">
+                    </div>
+                    <div class="t2_2r">扫码下载，更多版本戳这里</div>
+                </div>
+            </div>
+            <div class="bot_t3">
+                <div class="t3_1">认证&合作</div>
+                <div class="t3_2">申请认证</div>
+                <div class="t3_2">企业微博</div>
+                <div class="t3_2">微博标识</div>
+                <div class="t3_2">开放平台</div>
+            </div>
+            <div class="bot_t4">
+                <div class="t4_1">微博帮助</div>
+                <div class="t4_2">常见问题</div>
+                <div class="t4_2">自助服务</div>
+            </div>
+        </div>
+        <div class="bot_b">
+            <div class="bot_b1">
+                <div class="b1_1">微博客服</div>
+                <div class="b1_2">客服热线4000-960-960</div>
+                <div class="b1_3">意见反馈</div>
+                <div class="b1_4">舞弊举报</div>
+                <div class="b1_5">About Weibo</div>
+                <div class="b1_6">开放平台</div>
+                <div class="b1_7">微博招聘</div>
+                <div class="b1_8">新浪网导航</div>
+                <div class="b1_9">投诉处理大厅</div>
+                <select class="language" node-type="language">
+                    <option value="中文（简体）">中文（简体）</option>
+                    <option value="中文（台湾）">中文（台湾）</option>
+                    <option value="中文（香港）">中文（香港）</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+            <div class="bot_b2">
+                <div class="b2_1">京ICP证100780号</div>
+                <div class="b2_2">互联网药品服务许可证</div>
+                <div class="b2_3">京网文[2017]10291-1172号</div>
+                <div class="b2_4">京ICP备12002058号</div>
+                <div class="b2_5">增值电信业务经营许可证B2-20140447</div>
+                <div class="b2_6">乙测资字1111805</div>
+            </div>
+            <div class="bot_b3">
+                <div class="b3_1">广播电视节目制作经营许可证（京）字第04005号</div>
+                <div class="b3_2">Copyright © 2009-2019 WEIBO 北京微梦创科网络技术有限公司</div>
+                <div class="b3_3">京公网安备11000002000019号</div>
+            </div>
+        </div>   
+    </div>    
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

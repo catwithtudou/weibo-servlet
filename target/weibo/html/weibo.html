@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>微博-随时随地发现新鲜事</title>
+    <link rel="stylesheet" type="text/css" href="css/weibo.css">
+</head>
+<body style="margin:0;padding:0;" onload="init()" >
+    <div class="title1"></div>
+    <div class="title2">
+        <div class="title2a">
+            <img class="img1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548775670746&di=aed38cb3c1e82644cf2a16aac88bfcec&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F017794593fc139a8012193a3c54752.png%401280w_1l_2o_100sh.png">
+            <i class="i1">微博</i>
+            <input class="input1" type="text">
+            <img class="search" src="img/search.png">
+            <img class="zhuye" src="img/zhuye.png">
+            <p class="p1">首页</p>
+            <img class="shipin" src="img/shipin.png">
+            <p class="p2">视频</p>
+            <img class="find" src="img/find.png">
+            <p class="p3">发现</p>
+            <img class="youxi" src="img/youxi.png">
+            <p class="p4">游戏</p>
+            <p class="p5">注册</p>
+            <p class="p6">|</p>
+            <p class="p7">登陆</p>
+            </div>
+    </div>
+    <div class="bodyleft">
+        <div class="div1">热门</div>
+        <div class="div2">头条</div>
+        <div class="div3">视频</div>
+        <div class="div4">新鲜事</div>
+        <div class="div5">榜单</div>
+        <div class="div6">搞笑</div>
+        <div class="div7">社会</div>
+        <div class="div8">时尚</div>
+        <div class="div9">电影</div>
+        <div class="div10">美女</div>
+        <div class="div11">体育</div>
+        <div class="div12">动漫</div> 
+    </div>
+    <div class="bodycenter">
+        <img id="lunbotu" src="img/1.jpg">
+        <div class="bodycenter_n">
+                <div class="left_top">
+                        <div class="l_t_t">
+                            <div class="l_l_tl">
+                                <img class="tx7" src="img/tx2.jpg">
+                            </div>
+                            <div class="l_l_tr">
+                                <div class="l_l_tr_t">
+                                    <strong>tudou</strong>
+                                </div>
+                                <div class="l_l_tr_c">时间：2019-01-31 11:57:07</div>
+                                <div class="l_l_tr_b">微博：nihao</div>
+                            </div>
+                        </div>
+                        <div class="l_t_b">
+                            <div class="l_t_b1">
+                                <div class="l_t_b1_n">
+                                    <img src="img/sc.png">
+                                    收藏
+                                </div>
+                            </div>
+                            <div class="l_t_b2">
+                                <div class="l_t_b2">
+                                    <div class="l_t_b2_n">
+                                        <img src="img/zf.png">
+                                        转发
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l_t_b3">
+                                <div class="l_t_b3">
+                                    <form action="http://47.102.101.185:8080/weibo/people/textsecond?id=999" method="post" enctype="multipart/form-data">
+                                    <button class="l_t_b3_n">
+                                        <img src="img/pl.png">
+                                        评论
+                                        </form>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="l_t_b4">
+                                <div class="l_t_b4">
+                                    <form action="http://47.102.101.185:8080/weibo/people/addlikefirst?id=999" method="post" enctype="multipart/form-data">
+                                        <button class="l_t_b4_n">
+                                            <img src="img/dz.png">
+                                            点赞
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+            <script>
+                function init(){
+                setInterval("changeImg()",2000);
+            }
+            var i=1;
+            function changeImg(){
+                i++;
+                document.getElementById("lunbotu").src="img/"+i+".jpg"
+            }
+            if(i==5){
+                i=1;
+            }
+            </script> 
+            <div class="bodyright_top">
+                <div class="right_c1">
+                    <div class="right_c2">
+                        <div class="r_c2_head">
+                            <div class="r_c2_head_r">账号登陆</div>
+                            <div class="r_c2_head_l">安全登陆</div>
+                        </div>
+                        <div class="right_c2_center">
+                            <form action="http://47.102.101.185:8080/weibo/login" method="post">
+                                <div class="name">
+                                    <img src="img/geren.png" class="geren">
+                                    <input class="username" name="userid"type="text">
+                                </div>
+                                <div class="pass">
+                                    <img src="img/mima.png" class="mima">
+                                    <input class="password" name="password" type="text">
+                                </div>
+                                <div class="right_c2_center3">
+                                    <div class="c3_r">
+                                        <input type="radio"id="记住我" />
+                                        <label for="记住我" class="c3_rl">记住我</label>
+                                    </div>
+                                    <div class="c3_l">忘记密码</div>
+                                </div>
+                                <div class="deng">
+                                    <button type="submit" class="right_c2_center4">登陆</button>
+                                </div>
+                                <div class="right_c2_bottom">
+                                    <span class="p8">还没有微博？</span>
+                                    <a class="p9" href="https://weibo.com/signup/signup.php">立即注册！</a>
+                                </div>
+                                </form>
+                        </div>
+                        <div class="right_c1_bottom">
+                            <span class="p10">其他登陆：</span>
+                            <img src="img/taobao.png">
+                            <img src="img/qq.png">
+                            <img src="img/yidong.png">
+                            <img src="img/tianyi.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+
+            
+ 
+       
+</body>
+</html>

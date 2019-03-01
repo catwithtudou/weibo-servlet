@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>个人信息</title>
+    <link rel="stylesheet" type="text/css" href="css/weibo-person.css">
+</head>
+ <body style="margin:0;padding:0;" onload="init()">
+    <div class="body1">
+        <div class="top">
+            <div class="title1"></div>
+            <div class="title2">
+                <div class="title2a">
+                    <img class="img1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548775670746&di=aed38cb3c1e82644cf2a16aac88bfcec&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F017794593fc139a8012193a3c54752.png%401280w_1l_2o_100sh.png">
+                    <i class="i1">微博</i>
+                    <input class="input1" type="text">
+                    <img class="search" src="img/search.png">
+                    <img class="zhuye" src="img/zhuye.png">
+                    <p class="p1">首页</p>
+                    <img class="shipin" src="img/shipin.png">
+                    <p class="p2">视频</p>
+                    <img class="find" src="img/find.png">
+                    <p class="p3">发现</p>
+                    <img class="youxi" src="img/youxi.png">
+                    <p class="p4">游戏</p>
+                    <img class="person" src="img/person.png">
+                    <p class="p5">redrock</p>
+                    <p class="p6">|</p>
+                    <img class="message" src="img/message.png">
+                    <img class="set" src="img/set.png">
+                    <img class="edit" src="img/edit.png">
+                </div>
+            </div>
+        </div>
+        <div class="main_body">
+            <div class="m_top">
+                <div class="m_top_t">
+                    <img class="img_tx" src="img/tx.jpg">
+                </div>
+                <div class="m_top_b">
+
+            <!-- //上传头像 -->
+                    <form action="http://47.102.101.185:8080/weibo/up.html" method="post" enctype="multipart/form-data">
+                        本地目录：<input type="file" name="uploadFile">
+                        <input type="submit" value="上传头像">
+                    </form>
+                </div>
+    
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="m_bottom">
+                <div class="m_b_n">
+                    <div class="n1">我的主页</div>
+                    <div class="n1">我的相册</div>
+                    <div class="n1">管理中心</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="right">
+                <div class="r_t">
+                    <div class="r_t_t">
+                        <div class="r_t_tr">203</div>
+                        <div class="r_t_tc">100</div>
+                        <div class="r_t_tl">99</div>
+                    </div>
+                    <div class="r_t_b">
+                        <div class="r_t_br">关注</div>
+                        <div class="r_t_bc">粉丝</div>
+                        <div class="r_t_bl">微博</div>
+                    </div>
+                </div>
+                <div class="r_c">
+                    <div class="r_c_t">二维码</div>
+                    <div class="r_c_b">
+                        <img class="img2" src="https://qr.weibo.cn/inf/gen?api_key=bdc93f6ac5325648182fee881dd17f52&size=128&type=url&redirect=0&margin=0&data=http%3A%2F%2Fwww.weibo.com%2Fp%2F1005053796826505%3Ffrom%3Dqrcode&output_type=img&title=page_web_qrshow&datetime=nocheck&sign=1d6b310e4faca1e6c8e69de3edf90744">
+                        <div class="r_c_tl">扫描二维码，可以用手机访问本页</div>
+                    </div>
+                </div>
+                <div class="r_c1">
+                    <div class="r_c1_top">
+                        <div class="r_c1_tt">勋章信息</div>
+                        <div class="r_c1_tb">
+                            <div class="r_c1_tb_n">
+                                <img src="https://img.t.sinajs.cn/t4/style/images/medal/312_s.gif?version=">
+                                <img src="https://img.t.sinajs.cn/t4/style/images/medal/1205_s.gif?version=">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="r_c1_bottom">
+                        <div class="r_c1_bt">等级信息</div>
+                        <div class="r_c1_bc">
+                            <div class="r_c1_bc_n">
+                                <img src="img/lv.png">
+                                <div class="r_c1_bc_nt">
+                                    <div class="nt1">
+                                        <div class="nt1_l">当前等级：</div>
+                                        <div class="nt1_r">Lv.3</div>
+                                    </div>
+                                    <div class="nt2">
+                                        <div class="nt2_l">经验值：</div>
+                                        <div class="nt2_r">6126</div>
+                                    </div>
+                                    <div class="nt3">
+                                        <div class="nt3_l">距离升级需经验值：</div>
+                                        <div class="nt3_r">204</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="r_c1_bb">
+                            <div class="r_c1_bb_n">查看详情></div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+                <div class="r_b"></div>
+
+            </div>
+            <div class="left">
+                <form action="http://47.102.101.185:8080/weibo/people/updateuser" method="post">
+                    <div class="l_main">
+                        <div class="l_t">
+                            <div class="l_t_t">
+                                <div class="l_t_tr">基本信息</div>
+                                <button class="l_t_tl" type="submit">保存</button>
+                            </div>
+                            <div class="l_t_b">
+                                <div class="l_t_b1">
+                                    <div class="l_t_b1_r">登录名：</div>
+                                    <div class="l_t_b1_l">
+                                        <input class="b1_1" name="userid">
+                                    </div>
+                                </div>
+
+                                <div class="l_t_b2">
+                                    <div class="l_t_b2_r">昵称：</div>
+                                    <div class="l_t_b2_l">
+                                        <input class="b2_2" name="username">
+                                    </div>
+                                </div>
+
+                                <div class="l_t_b_p1">
+                                    <div class="l_t_b_p1t">
+                                        <div class="l_t_b_p1t1">
+                                            用户你好，微博允许普通用户一年修改一次昵称，请谨慎提交，橙V、蓝V认证用户修改次数请见详细规则，
+                                            <a class="a1" href="https://kefu.weibo.com/faqdetail?id=532">查看详细规则>></a>
+                                        </div>
+                                    </div>
+                                    <div class="l_t_b_p1b">
+                                        <div class="l_t_b_p1b1">
+                                            微博年费会员最多可修改5次/年，
+                                            <a class="a2" href="https://pay.vip.weibo.com/vippay?sinainternalbrowser=topnav&toolbar_hidden=1&F=tq_nicheng&from=tq_nicheng">立即开通会员>></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="l_t_b3">
+                                    <div class="l_t_b3_r">生日：</div>
+                                    <div class="l_t_b3_l">
+                                        <input class="b3_3" name="birthday">
+                                        <select class="secret" node-type="birthday">
+                                            <option value="公开，完整显示">公开，完整显示</option>
+                                            <option value="只显示星座">只显示星座</option>
+                                            <option value="只显示月日">只显示月日</option>
+                                            <option value="保密">保密</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="l_t_b4">
+                                    <div class="l_t_b4_r">地址：</div>
+                                    <div class="l_t_b4_l">
+                                        <input class="b4_4" name="address">
+                                        <select class="secret" node-type="address">
+                                                <option value="所有人可见">所有人可见</option>
+                                                <option value="我关注的人可见">我关注的人可见</option>
+                                                <option value="仅自己可见">仅自己可见</option>
+                                            </select>
+                                    </div>
+                                </div>
+
+                                <div class="l_t_b5">
+                                    <div class="l_t_b5_r">职业：</div>
+                                    <div class="l_t_b5_l">
+                                        <input class="b5_5" name="profession">
+                                    </div>
+                                </div>
+
+                                <div class="l_t_b6">
+                                    <div class="l_t_b6_r">性别：</div>
+                                    <div class="l_t_b6_l">
+                                        <input class="b6_6" name="sex">
+                                    </div>
+                                </div>
+
+                                <div class="l_t_b7">
+                                    <div class="l_t_b7_r">简介：</div>
+                                    <div class="l_t_b7_l">
+                                        <input class="b7_7" name="introduce">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l_c">
+                            <div class="l_c_t">
+                                <strong>职业信息</strong>
+                            </div>
+                            <div class="l_c_b">
+                                <div class="c_b_l">
+                                    马上填写
+                                </div>
+                                <div class="c_b_r">
+                                    你的职业信息，让他人更好地了解你，与更多的同事微博相遇！
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l_b">
+                            <div class="l_b_t">
+                                <strong>教育信息</strong>
+                            </div>
+                            <div class="l_b_b">
+                                <div class="b_b_l">
+                                    马上填写
+                                </div>
+                                <div class="b_b_r">
+                                    你的教育信息，让他人更好地了解你，与更多的同事微博相遇！
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                    </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bot_t">
+                <div class="bot_t1">
+                    <div class="t1_1">微博精彩</div>
+                    <div class="t1_2">热门微博</div>
+                    <div class="t1_2">名人堂</div>
+                    <div class="t1_2">微相册</div>
+                    <div class="t1_2">微指数</div>
+                </div>
+                <div class="bot_t2">
+                    <div class="t2_1">手机玩微博</div>
+                    <div class="t2_2">
+                        <div class="t2_2l">
+                            <img src="https://img.t.sinajs.cn/t6/style/images/common/footer_code.jpg">
+                        </div>
+                        <div class="t2_2r">扫码下载，更多版本戳这里</div>
+                    </div>
+                </div>
+                <div class="bot_t3">
+                    <div class="t3_1">认证&合作</div>
+                    <div class="t3_2">申请认证</div>
+                    <div class="t3_2">企业微博</div>
+                    <div class="t3_2">微博标识</div>
+                    <div class="t3_2">开放平台</div>
+                </div>
+                <div class="bot_t4">
+                    <div class="t4_1">微博帮助</div>
+                    <div class="t4_2">常见问题</div>
+                    <div class="t4_2">自助服务</div>
+                </div>
+            </div>
+            <div class="bot_b">
+                <div class="bot_b1">
+                    <div class="b1_1">微博客服</div>
+                    <div class="b1_2">客服热线4000-960-960</div>
+                    <div class="b1_3">意见反馈</div>
+                    <div class="b1_4">舞弊举报</div>
+                    <div class="b1_5">About Weibo</div>
+                    <div class="b1_6">开放平台</div>
+                    <div class="b1_7">微博招聘</div>
+                    <div class="b1_8">新浪网导航</div>
+                    <div class="b1_9">投诉处理大厅</div>
+                    <select class="language" node-type="language">
+                        <option value="中文（简体）">中文（简体）</option>
+                        <option value="中文（台湾）">中文（台湾）</option>
+                        <option value="中文（香港）">中文（香港）</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
+                <div class="bot_b2">
+                    <div class="b2_1">京ICP证100780号</div>
+                    <div class="b2_2">互联网药品服务许可证</div>
+                    <div class="b2_3">京网文[2017]10291-1172号</div>
+                    <div class="b2_4">京ICP备12002058号</div>
+                    <div class="b2_5">增值电信业务经营许可证B2-20140447</div>
+                    <div class="b2_6">乙测资字1111805</div>
+                </div>
+                <div class="bot_b3">
+                    <div class="b3_1">广播电视节目制作经营许可证（京）字第04005号</div>
+                    <div class="b3_2">Copyright © 2009-2019 WEIBO 北京微梦创科网络技术有限公司</div>
+                    <div class="b3_3">京公网安备11000002000019号</div>
+                </div>
+        </div>
+
+
+
+
+    
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
