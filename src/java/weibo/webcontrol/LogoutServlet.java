@@ -33,7 +33,7 @@ public class LogoutServlet extends HttpServlet {
         session.invalidate();
         //注销成功
         System.out.println("注销成功"+username);
-        resp.getWriter().print("用户"+username+"注销成功");
+        resp.getWriter().print("<script>alert('"+" 用户:"+username+" 注销成功');</script>");
     }
 
     @Override

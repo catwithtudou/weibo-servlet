@@ -48,10 +48,10 @@ public class SendCommentServlet extends HttpServlet {
         boolean flag= SendTextServiceImpl.getInstance().sendComment(text,0);
         boolean reflag=SendTextServiceImpl.getInstance().addcomment(pid);
         if(flag&&reflag){
-            resp.getWriter().print("用户"+username+"发布了一条评论");
-            resp.getWriter().print("id="+pid+"的微博评论数+1");
+            resp.getWriter().print("<script>alert('"+" 用户 "+username+"发布评论成功');</script>");
+            System.out.println("id="+pid+"的微博评论数+1");
         }else{
-            resp.getWriter().print("发布评论失败请重新再试");
+            resp.getWriter().print("<script>alert('请重新再试');</script>");
         }
 
 

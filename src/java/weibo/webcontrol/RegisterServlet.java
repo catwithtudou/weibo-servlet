@@ -42,9 +42,9 @@ public class RegisterServlet extends HttpServlet {
         //将用户存入数据库,并判断是否注册成功
         boolean flag= RegisterServiceImpl.getInstance().registerUser(user);
         if(flag){
-            resp.getWriter().print("恭喜"+username+"注册成功!!!");
+            resp.getWriter().print("<script>alert('"+" 恭喜 "+username+" 注册成功');</script>");
         }else {
-            resp.getWriter().print("注册失败,请重新再试!!!");
+            resp.getWriter().print("<script>alert('注册失败,用户名或昵称已存在');</script>");
             //重新跳转进主页
            // resp.sendRedirect("/login");
         }

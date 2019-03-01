@@ -41,7 +41,7 @@ public class GetTextServlet extends HttpServlet {
             sb.append("]}");
             resp.getWriter().print(sb.toString());
         }else{
-            resp.getWriter().print("请重新再试!!!调取功能失败!!!!");
+            resp.getWriter().print("<script>alert('请重新再试');history.back();</script>");
         }
     }
 }

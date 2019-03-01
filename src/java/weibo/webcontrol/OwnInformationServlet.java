@@ -33,7 +33,7 @@ public class OwnInformationServlet extends HttpServlet {
         if(json!=null){
             resp.getWriter().print(json);
         }else{
-            resp.getWriter().print("获取信息失败请重新再试!!!!!");
+            resp.getWriter().print("<script>alert('请重新再试');</script>");
         }
     }
 

@@ -46,9 +46,9 @@ public class SendRecommentServlet extends HttpServlet {
         //使用评论后此微博的评论数+1
         boolean flag= SendTextServiceImpl.getInstance().sendComment(text,1);
         if(flag){
-            resp.getWriter().print("用户"+username+"发布了一条评论");
+            resp.getWriter().print("<script>alert('"+" 用户 "+username+"发布评论成功');</script>");
         }else{
-            resp.getWriter().print("发布一条评论失败");
+            resp.getWriter().print("<script>alert('请重新再试');</script>");
         }
     }
 }

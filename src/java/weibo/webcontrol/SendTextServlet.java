@@ -66,14 +66,16 @@ public class SendTextServlet extends HttpServlet {
             else{
                 System.out.println("用户更新微博数失败!!!!!");
             }
-            //模拟网络延迟重复提交
-            try{
-                //当前线程睡眠3秒模拟该现象
-                Thread .sleep(3*1000);
-            }catch (InterruptedException e){
-                e.printStackTrace();
-            }
-            resp.getWriter().print("<script/>"+"alert('用户"+username+"发布了一条微博');</script>");
+
+//            //模拟网络延迟重复提交
+//            try{
+//                //当前线程睡眠3秒模拟该现象
+//                Thread .sleep(3*1000);
+//            }catch (InterruptedException e){
+//                e.printStackTrace();
+//            }
+
+            resp.getWriter().print("<script>"+"alert('用户"+username+"发布了一条微博');</script>");
             req.getSession().removeAttribute("token");
         }else{
             System.out.println("请不要重复提交");

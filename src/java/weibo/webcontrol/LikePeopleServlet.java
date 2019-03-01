@@ -41,12 +41,12 @@ public class LikePeopleServlet extends HttpServlet {
         boolean flag2= UpdateUserServiceImpl.getInstance().addLikepeople(usersecond);
         if(flag2){
             if(UpdateUserServiceImpl.getInstance().updateUserPiece("likes",userid)&&UpdateUserServiceImpl.getInstance().updateUserPiece("fan",likeuserid)) {
-                resp.getWriter().print(userid + "关注" + likeuserid + "成功");
+                resp.getWriter().print("<script>alert('"+userid + " 关注 " + likeuserid + " 成功');</script>");
             }else{
-                resp.getWriter().print(userid+"关注失败!!!!!!!"+likeuserid);
+                resp.getWriter().print("<script>alert('"+userid+" 关注 "+likeuserid+" 失败');</script>");
             }
         }else {
-            resp.getWriter().print(userid+"关注失败!!!!!!!"+likeuserid);
+            resp.getWriter().print("<script>alert('"+userid+" 关注 "+likeuserid+" 失败');</script>");
         }
     }
 

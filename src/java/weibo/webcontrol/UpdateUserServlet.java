@@ -63,9 +63,9 @@ public class UpdateUserServlet extends HttpServlet {
         //将修改后的user存入数据库
         boolean flag= UpdateUserServiceImpl.getInstance().updateUser(oriuser);
         if(flag){
-            resp.getWriter().print("修改个人资料成功!!!!");
+            resp.getWriter().print("<script>alert('修改个人资料成功');</script>alert");
         }else{
-            resp.getWriter().print("修改个人资料失败!!!!");
+            resp.getWriter().print("<script>alert('修改个人资料失败');</script>alert");
         }
     }
 }

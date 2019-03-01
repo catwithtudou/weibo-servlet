@@ -326,6 +326,7 @@
 - Gettimeutil:得到当前时间戳工具
 - Jdbcutil:数据库驱动和关闭工具
 - LoginFilterutil:登录过滤器
+- TokenProccessorutil:生成令牌工具
 
 #### webcontrol层
 
@@ -434,5 +435,4 @@
 
 - **AddLikeThirdTextServlet:点赞评论的评论页面(需要过滤) /people/addlikethird**
 
-  
-
+- **GetTokenServlet:得到Token令牌的页面(需要过滤) /people/form**

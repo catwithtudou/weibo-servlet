@@ -77,7 +77,7 @@ public class UpdatePhotoServlet extends HttpServlet {
                             session.setAttribute("image_path", "image/" + newfilename);
                             UpdateUserServiceImpl.getInstance().updatephoto("image/"+newfilename,userid);
                             String url=req.getContextPath();
-                            resp.getWriter().print("上传成功!!!");
+                            resp.getWriter().print("<script>alert('上传成功');</script>");
                         }
                     }
                 }

@@ -41,7 +41,7 @@ public class LoginServlet extends HttpServlet {
         //验证该用户是否存在
         boolean flag= LoginServiceImpl.getInstance().loginUser(userfirst);
         if(flag){
-            resp.getWriter().print("用户登陆成功");
+            resp.getWriter().print("<script>alert('用户登陆成功');</script>");
             //登陆成功后创建session并调取用户信息
             HttpSession session=req.getSession();
             Userfirst userfirst1= LoginServiceImpl.getInstance().getUser(userid);
@@ -50,7 +50,7 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("username",userfirst1.getUsername());
            session.setAttribute("photo",userfirst1.getPhoto());
         }else{
-            resp.getWriter().print("登陆失败，请重新再试");
+            resp.getWriter().print("<script>alert('用户名或密码错误');history.back();</script>");
            // resp.sendRedirect("/login");
         }
     }

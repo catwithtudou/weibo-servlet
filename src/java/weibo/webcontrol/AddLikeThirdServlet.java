@@ -36,9 +36,9 @@ public class AddLikeThirdServlet extends HttpServlet {
         //使用点赞功能
         boolean flag= SendTextServiceImpl.getInstance().addlikes(pid,"ids",username);
         if(flag){
-            resp.getWriter().print("点赞成功!!!!");
+            resp.getWriter().print("<script>alert('点赞成功')</script>");
         }else{
-            resp.getWriter().print("点赞失败请重新再试!!!");
+            resp.getWriter().print("<script>alert('点赞失败,请重新再试');history.back();</script>");
         }
     }
 }
