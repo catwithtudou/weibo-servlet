@@ -33,7 +33,7 @@
     <session id="-1999684727">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.0" value="7" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.10" value="1" />
@@ -295,7 +295,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="341" />
     <option name="y" value="47" />
     <option name="width" value="1167" />
@@ -412,7 +412,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551498523308" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551498760332" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -631,7 +631,7 @@
       <workItem from="1551414703333" duration="606000" />
       <workItem from="1551442716535" duration="15568000" />
       <workItem from="1551488981372" duration="113000" />
-      <workItem from="1551494282952" duration="3898000" />
+      <workItem from="1551494282952" duration="4140000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;使用编译器提交&quot;">
       <created>1551446557563</created>
@@ -644,10 +644,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167981000" />
+    <option name="totallyTimeSpent" value="168223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="341" y="47" width="1167" height="1058" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23486902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -659,7 +660,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32719395" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49954832" visible="true" weight="0.2892741" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954832" weight="0.2892741" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
