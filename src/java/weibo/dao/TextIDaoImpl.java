@@ -44,7 +44,7 @@ public class TextIDaoImpl implements TextIDao {
 
     @Override
     public int insertText(Text text) {
-        String sql="INSERT INTO textfirst(username,photo,information,times)VALUES(?,?,?,?)";
+        String sql="INSERT INTO textfirst(username,photo,information,times,inphoto)VALUES(?,?,?,?,?)";
         int id=0;
         try{
             if(connection==null||connection.isClosed()){
@@ -55,6 +55,7 @@ public class TextIDaoImpl implements TextIDao {
             preparedStatement.setString(2,text.getPhoto());
             preparedStatement.setString(3,text.getInformation());
             preparedStatement.setString(4,text.getTime());
+            preparedStatement.setString(5,text.getInphoto());
             preparedStatement.executeUpdate();
             resultSet=preparedStatement.getGeneratedKeys();
             if(resultSet.next()){

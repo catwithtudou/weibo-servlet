@@ -44,11 +44,13 @@ public class SendTextServlet extends HttpServlet {
         String userid=(String)session.getAttribute("userid");
         String username=(String)session.getAttribute("username");
         String photo=(String)session.getAttribute("photo");
+        String inphoto=(String)session.getAttribute("inphoto");
         //发布微博的内容需要用户提交
         String information=req.getParameter("information");
         //获得时间
         String times= Gettimeutil.getcurrentTime();
         text.setUsername(username);text.setPhoto(photo);text.setInformation(information);text.setTime(times);
+        text.setInphoto(inphoto);
         //使用发布微博功能并返回此微博的id
         //f发布微博后个人数据中微博数+1
         int id=0;

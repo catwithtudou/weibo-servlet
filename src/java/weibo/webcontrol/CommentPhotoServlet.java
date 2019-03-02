@@ -6,6 +6,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import weibo.utils.Gettimeutil;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,6 +23,8 @@ import java.util.List;
  * @Description:上传评论的图片页面(需要过滤)
  * @date 2019/2/24下午 05:59
  */
+
+@WebServlet("/people/textphoto")
 public class CommentPhotoServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -60,6 +63,7 @@ public class CommentPhotoServlet extends HttpServlet {
                         String newfilename=filename;
                         System.out.println(newfilename);
 
+                       // File file=new File("D:/weibo/src/main/webapp/image/"+newfilename);
                         File file=new File("/var/lib/tomcat8/webapps/weibo/image/"+newfilename);
                         System.out.println(file.getAbsolutePath());
                         fileItem.write(file);
@@ -68,6 +72,9 @@ public class CommentPhotoServlet extends HttpServlet {
 
                         if(session!=null){
                             session.setAttribute("inphoto","image/"+newfilename);
+                            resp.getWriter().print("<script>alert('上传成功');window.location='/form.jsp';</script>");
+                            System.out.println("image/"+newfilename);
+
                         }
                     }
                 }

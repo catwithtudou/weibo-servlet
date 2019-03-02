@@ -428,7 +428,7 @@
 
 - **UpdatePhotoServlet:上传用户头像页面(需要过滤) /people/updatephoto**
 - **UserPhotoServlet:得到用户头像页面(不需要过滤) /photo**
-- **CommentPhotoServlet:上传评论的图片页面(需要过滤) **
+- **CommentPhotoServlet:上传评论的图片页面(需要过滤)  /people/textphoto**
 - **AddLikeFirstTextServlet:点赞微博页面(需要过滤) /people/addlikefirst**
 
 - **AddLikeSecondTextServlet:点赞评论页面(需要过滤) /people/addlikesecond**
