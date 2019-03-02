@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/main/webapp/html" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/weibo" vcs="Git" />
   </component>
 </project>
