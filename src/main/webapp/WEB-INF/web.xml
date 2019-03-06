@@ -188,4 +188,17 @@
     <filter-name>LoginFilter</filter-name>
     <url-pattern>/people/*</url-pattern>
   </filter-mapping>
+  <filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>weibo.utils.CharacterEncodingFilterutil</filter-class>
+    <init-param>
+      <param-name>charset</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>
