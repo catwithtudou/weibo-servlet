@@ -57,35 +57,40 @@ public class CharacterEncodingFilterutil implements Filter {
  *4.覆盖需要增强的方法
  *5.对于不想增强的方法,直接调用被增强对象(目标对象)的方法
  　*/
-class MyCharacterEncodingRequest extends HttpServletRequestWrapper{
+class MyCharacterEncodingRequest extends HttpServletRequestWrapper {
 
     private HttpServletRequest request;
+
     public MyCharacterEncodingRequest(HttpServletRequest request) {
         super(request);
-        this.request=request;
+        this.request = request;
     }
+
     /**
-    　　* @Description: 重写getParameter方法
-    　　* @param :name
-    　　*/
+     * 　　* @Description: 重写getParameter方法
+     * 　　* @param :name
+     *
+     */
     @Override
-    public String getParameter(String name){
-        try{
+    public String getParameter(String name) {
+
+        try {
             //获取参数的值
-            String value=this.request.getParameter(name);
-            if(value==null){
+            String value = this.request.getParameter(name);
+            if (value == null) {
                 return null;
             }
+
             //若不是以get方式提交数据的,就直接返回获取到的值
-            if(!this.request.getMethod().equalsIgnoreCase("get")){
+            if (!this.request.getMethod().equalsIgnoreCase("get")) {
                 return value;
-            }else{
+            } else {
                 //如果是以get方式提交数据的,就对获取到的值进行转码处理
-                value = new String(value.getBytes("ISO8859-1"),this.request.getCharacterEncoding());
+                value = new String(value.getBytes("ISO8859-1"), this.request.getCharacterEncoding());
                 return value;
             }
-        }catch (Exception e){
-            e.printStackTrace();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 }
